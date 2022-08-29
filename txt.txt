@@ -1,5 +1,10 @@
-install `protoc-gen-go` first!
-for generating using protoc
+install local `protoc` first!
+install local `protoc-gen-go`
+for generating protobuf using protoc
+
+#package
+go get -u google.golang.org/protobuf
+go get -u github.com/golang/protobuf/protoc-gen-go
 
 using command protoc: PATH=$PATH:$GOPATH/bin/ protoc --go_out=. *.proto
 and make sure the gopath was setup in ~/.bash_profile and is sourced!
